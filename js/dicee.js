@@ -36,9 +36,11 @@ function rollDice(){
 
     if (document.querySelector("#dice1").classList.item(1) == "visible"){
       document.querySelectorAll(".btn")[0].textContent = "STOP DICE";
+    }
+    else {
+      document.querySelectorAll(".btn")[0].textContent = "ROLL DICE";
       getRandomDice(1);
     }
-    else {document.querySelectorAll(".btn")[0].textContent = "ROLL DICE";}
 }
 
 function getRandomDice(blnReset){
@@ -59,7 +61,6 @@ function getRandomDice(blnReset){
 
   document.querySelector("#dice1").setAttribute("src", "images/" + "dice" + rndDice1 + ".png");
   document.querySelector("#dice2").setAttribute("src", "images/" + "dice" + rndDice2 + ".png");
-
   showWinner(rndDice1, rndDice2);
 }
 
@@ -69,13 +70,14 @@ function showWinner(val1, val2){
   if (val1 > val2) {
     document.querySelector("#p1").classList.remove("visible");
     document.querySelector("#p2").classList.add("visible");
+    audio.STOP;
     audio.play();
   }
   else if (val2 > val1) {
     document.querySelector("#p1").classList.add("visible");
     document.querySelector("#p2").classList.remove("visible");
+    audio.STOP;
     audio.play();
-
   }
   else {
     document.querySelector("#p1").classList.add("visible");
