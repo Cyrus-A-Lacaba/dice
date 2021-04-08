@@ -1,0 +1,104 @@
+
+body{
+  background-color: #000;
+  text-align: center;
+}
+
+h1{
+  position:relative;
+  display: inline-flex;
+  font-family: 'Fredoka One', cursive;
+  color: #ffd57e;
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+footer{
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+h2{
+  font-family: 'Titan One', cursive;
+  color: #e40017;
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 3px #bd2000;
+}
+
+.title_img{
+  position: relative;
+  display: inline-flex;
+  align-self:center;
+  width: 10rem;
+  height: 10rem;
+}
+
+.flex-container-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container-heading, .flex-container-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-content, .flex-content-button{
+  justify-content: center;
+  margin: 1rem;
+}
+
+.wins_img{
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.dice,.dicegif{
+  width: 60%;
+  height: 60%;
+  margin: 2rem;
+  border-radius: 16%;
+  filter:drop-shadow(5px 5px 5px #532e1c);
+}
+
+.visible {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1{
+    font-size: 3rem;
+  }
+
+  .title_img{
+    width: 6rem;
+    height: 6rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  .flex-container-body  {
+    flex-direction: column;
+  }
+
+  .flex-content{
+    justify-content: center;
+    margin: 0.5rem;
+  }
+
+  .wins_img{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .dice, .dicegif{
+    width: 30%;
+    height:  30%;
+  }
+}
