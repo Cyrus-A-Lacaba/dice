@@ -8,7 +8,8 @@ h1{
   position:relative;
   display: inline-flex;
   font-family: 'Fredoka One', cursive;
-  color: #ffd57e;
+  color: #fff;
+  text-shadow: 2px 2px 2px gray;
   text-align: center;
   font-size: 4.5rem;
 }
